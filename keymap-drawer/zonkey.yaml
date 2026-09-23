@@ -1,12 +1,12 @@
 layout: {zmk_keyboard: zonkey}
 layers:
-  default:
-  - Q
+  default_layer:
+  - {t: Q, h: TAB}
   - W
   - E
   - R
   - T
-  - A
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
@@ -17,22 +17,22 @@ layers:
   - D
   - F
   - G
-  - Sft+Gui+KP 4
-  - B
+  - LANGUAGE 2
+  - {t: ▽, type: trans}
   - B
   - H
   - J
   - K
   - L
-  - ''''
+  - ;
   - LEFT SHIFT
   - Z
   - X
-  - {t: C, h: '6'}
-  - {t: V, h: '5'}
-  - {t: B, h: '4'}
-  - C
-  - '-'
+  - {t: C, h: layer_6}
+  - {t: V, h: layer_5}
+  - {t: B, h: layer_4}
+  - {t: ▽, type: trans}
+  - LANGUAGE 1
   - N
   - M
   - ','
@@ -41,16 +41,75 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: INT HENKAN, h: '3'}
-  - {t: SPACE, h: '2'}
-  - {t: INT MUHENKAN, h: '1'}
-  - D
+  - LEFT WIN
+  - LEFT ALT
+  - {t: SPACE, h: layer_1}
+  - {t: ▽, type: trans}
+  - {t: BACKSPACE, h: layer_2}
+  - {t: ENTER, h: layer_1}
+  - DEL
+  layer_1:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - UP ARROW
+  - '8'
+  - '9'
+  - TAB
   - BACKSPACE
   - ENTER
   - DEL
-  '1':
-  - CAPSLOCK
-  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 2
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT
+  - ''''
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '"'
+  - {t: ESC, h: LCTL}
+  - LEFT WIN
+  - LEFT ALT
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1, type: held}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - '0'
+  layer_2:
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - {t: ▽, type: trans}
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -59,17 +118,6 @@ layers:
   - {t: ▽, type: trans}
   - '-'
   - '='
-  - DEL
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LANGUAGE 2
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '['
   - ']'
   - \
@@ -81,83 +129,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LANGUAGE 1
-  - ;
-  - ''''
-  - RETURN
-  - RET
-  - {t: ESC, h: LCTL}
-  - LEFT WIN
-  - LEFT ALT
-  - {t: INT HENKAN, h: '3'}
-  - {t: SPACE, h: '2'}
-  - {t: INT MUHENKAN, h: '1', type: held}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - ENTER
-  - DEL
-  '2':
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - {t: ▽, type: trans}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - Sft+-
+  - Sft+=
+  - Sft+[
+  - Sft+]
+  - Sft+\
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: INT HENKAN, h: '3'}
-  - {t: SPACE, h: '2', type: held}
-  - {t: INT MUHENKAN, h: '1'}
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1}
   - {t: ▽, type: trans}
-  - BACKSPACE
+  - {t: BACKSPACE, type: held}
   - ENTER
-  - DEL
-  '3':
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - '#'
+  layer_3:
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
   - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,14 +185,14 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: INT HENKAN, h: '3', type: held}
-  - {t: SPACE, h: '2'}
-  - {t: INT MUHENKAN, h: '1'}
+  - {t: INT HENKAN, h: layer_3, type: held}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1, type: held}
   - {t: ▽, type: trans}
   - BACKSPACE
   - ENTER
   - DEL
-  '4':
+  layer_4:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -240,6 +240,342 @@ layers:
   - BACKSPACE
   - ENTER
   - DEL
+  layer_5:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - INT HENKAN
+  - SPACE
+  - INT MUHENKAN
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - DEL
+  layer_6:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - A
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - Sft+Gui+KP 4
+  - B
+  - B
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - LEFT SHIFT
+  - Z
+  - X
+  - {t: C, h: layer_6}
+  - {t: V, h: layer_5}
+  - {t: B, h: layer_4}
+  - C
+  - '-'
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1}
+  - D
+  - BACKSPACE
+  - ENTER
+  - DEL
+  '1':
+  - CAPSLOCK
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - DEL
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - \
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 1
+  - ;
+  - ''''
+  - RETURN
+  - RET
+  - {t: ESC, h: LCTL}
+  - LEFT WIN
+  - LEFT ALT
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - DEL
+  '2':
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - DEL
+  '3':
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: INT HENKAN, h: layer_3}
+  - {t: SPACE, h: layer_2}
+  - {t: INT MUHENKAN, h: layer_1}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - DEL
+  '4':
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - '-'
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
+  - BT CLR
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - /
+  - KP 4
+  - KP 5
+  - KP 6
+  - '*'
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - '='
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - INT HENKAN
+  - SPACE
+  - INT MUHENKAN
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ENTER
+  - DEL
   '5':
   - '&studio_unlock'
   - {t: ▽, type: trans}
@@ -269,7 +605,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -316,7 +652,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
